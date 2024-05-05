@@ -1,9 +1,12 @@
 [package]
 name = "lifers-ascii"
+desctiption = "A simple ASCII frontend for lifers"
 version = "0.1.0"
+repository = "https://github.com/Froloket64/lifers-ascii.git"
+license = "MIT"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+keywords = ["cellular_automata", "game_of_life"]
+categories = ["simulation"]
 
 [dependencies]
 lifers = "0.1.0"
