@@ -1,7 +1,7 @@
 [package]
 name = "lifers-ascii"
 description = "A simple ASCII frontend for lifers"
-version = "0.1.0"
+version = "0.1.1"
 repository = "https://github.com/Froloket64/lifers-ascii.git"
 license = "MIT"
 edition = "2021"
@@ -9,4 +9,4 @@ keywords = ["cellular_automata", "game_of_life"]
 categories = ["simulation"]
 
 [dependencies]
-lifers = "0.1.0"
+lifers = "0.2.0"

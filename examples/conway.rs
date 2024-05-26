@@ -26,12 +26,12 @@ impl RenderCell<String> for Cell {
 fn main() {
     let spawn = [(2, 0), (2, 1), (3, 1), (1, 2), (2, 2)];
     let game = Automaton::build(GRID_SIZE)
-        .generations(GENERATION_LIMIT)
         .init(|pos| Cell {
             is_alive: spawn.contains(&pos),
         })
         // Compute number of neighbors
         .map(|(x, y), _, cells| count_neighbors(cells, (x, y), 1, |c| c.is_alive))
+        .generations(GENERATION_LIMIT)
         // Change state depending on the number of neighbors
         .run(|(_, _), cell, neighbors_n| match cell.is_alive {
             true => Cell {

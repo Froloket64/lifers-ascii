@@ -25,7 +25,7 @@ where
 
         Some(
             self.automaton
-                .cells
+                .cells()
                 .iter()
                 .map(|xs| xs.iter().map(|x| x.render_cell()).collect::<String>())
                 // OPTIM: When is this coming to stable??
